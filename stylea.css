@@ -9,7 +9,7 @@
 body {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-family: "Inter", sans-serif;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ body {
 main {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   align-items: center;
   justify-content: center;
   padding: 2rem 3rem;
@@ -32,6 +32,7 @@ main {
   justify-content: center;
   text-align: center;
   border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
   & .title-h1 {
     color: white;
@@ -107,6 +108,7 @@ input {
   border-radius: 25px;
   border: none;
   background-color: rgb(104, 15, 187);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
   & a {
     color: rgb(243, 236, 236);
@@ -116,11 +118,20 @@ input {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 375px) {
   main {
     flex-direction: column;
     width: 320px;
-    padding: 2rem 2rem;
+    height: 100%;
+    margin: 0px;
+  }
+}
+@media (max-width: 375px) {
+  .btn {
+  a {
+    color: rgb(234, 234, 243);
+    font-size: 21px;
+     margin: auto;
   }
 }
 
@@ -128,6 +139,7 @@ input {
   .input-01 {
     width: 320px;
     height: 300px;
+    justify-content: center;
   }
 }
 
@@ -184,7 +196,7 @@ input {
     & span {
       font-family: "Inter", sans-serif;
       font-weight: 600;
-      font-size: 30px;
+      font-size: 40px;
       color: rgb(66, 63, 63);
     }
   }
