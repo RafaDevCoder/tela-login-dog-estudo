@@ -91,7 +91,7 @@ label {
   display: flex;
   margin-bottom: 5px;
   color: rgb(61, 60, 60);
-  margin-top: 30px;
+  margin-top: 10px;
 }
 input {
   display: flex;
@@ -118,15 +118,16 @@ input {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   main {
+    display: flex;
     flex-direction: column;
     width: 320px;
     height: 100%;
     margin: 0px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .btn {
   a {
     color: rgb(234, 234, 243);
@@ -143,6 +144,7 @@ input {
   }
 }
 
+
 @media (max-width: 425px) {
   .boas {
     width: 100%;
@@ -153,13 +155,14 @@ input {
 @media (max-width: 425px) {
   input {
     width: 100%;
+    
   }
 }
 @media (max-width: 425px) {
   form {
     width: 500px;
     margin: 0px;
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }
 
@@ -205,6 +208,7 @@ input {
 /* resposivo 768px */
 @media (max-width: 768px) {
   main {
+    flex-direction: column;
     width: 768px;
     height: 528px;
     padding: 2rem 2rem;
